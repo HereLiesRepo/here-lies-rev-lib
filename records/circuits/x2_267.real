@@ -1,0 +1,53 @@
+# revopt: quantum-cost objective, exact equivalence checked over every free-input assignment
+.version  1.0
+.numvars 17
+.variables  f6 f5 f4 f3 f2 f1 f0 x9 x8 x7 x6 x5 x4 x3 x2 x1 x0
+.inputs  0 0 0 0 0 0 0 x9 x8 x7 x6 x5 x4 x3 x2 x1 x0
+.outputs  f6 f5 f4 f3 f2 f1 f0 x9 x8 x7 x6 x5 x4 x3 x2 x1 x0
+.constants 0000000----------
+.garbage 1111111111-------
+.begin
+t2 x8 x7
+t2 x9 x7
+t2 x7 x1
+t2 x7 x0
+t2 x7 x2
+t1 f6
+t2 x6 f6
+t2 f6 f5
+t8 x9 x8 x7 x6 x2 x1 x0 f6
+t1 x7
+t6 x9 x8 x7 x6 x5 f6
+t1 x9
+t7 x9 x8 x7 x6 x4 x3 f6
+t1 x8
+t4 x8 x7 x6 f6
+t4 x9 x8 x6 f5
+t1 x9
+t1 x8
+t6 x9 x8 x7 x6 x5 f5
+t1 x9
+t1 x4
+t7 x9 x8 x7 x6 x4 x3 f5
+t1 x9
+t1 x7
+t1 x2
+t7 x9 x7 x6 x2 x1 x0 f5
+t1 x2
+t1 f4
+t3 x9 x6 f4
+t3 x8 x6 f4
+t3 x7 x6 f4
+t5 x9 x8 x7 x6 f4
+t1 f3
+t1 x9
+t7 x9 x8 x7 x2 x1 x0 f3
+t1 x8
+t1 x7
+t4 x9 x8 x7 f2
+t3 x8 x7 f1
+t1 x8
+t1 f1
+t1 f0
+t4 x9 x8 x7 f0
+.end

@@ -1,0 +1,54 @@
+# HereLiesRevLib circuit: see records/RECORDS.tsv
+.version 2.0
+.numvars 112
+.variables x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31 x32 x33 x34 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48 x49 x50 x51 x52 x53 x54 x55 x56 x57 x58 x59 x60 x61 x62 x63 x64 x65 x66 x67 x68 x69 x70 x71 x72 x73 x74 x75 x76 x77 x78 x79 x80 x81 x82 x83 x84 x85 x86 x87 x88 x89 x90 x91 x92 x93 x94 x95 x96 x97 x98 x99 x100 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110 x111
+.inputs x.0 x.1 x.2 x.3 x.4 x.5 x.6 x.7 x.8 x.9 x.10 x.11 x.12 x.13 x.14 x.15 y.0 y.1 y.2 y.3 y.4 y.5 y.6 y.7 y.8 y.9 y.10 y.11 y.12 y.13 y.14 y.15 z.0 z.1 z.2 z.3 z.4 z.5 z.6 z.7 z.8 z.9 z.10 z.11 z.12 z.13 z.14 z.15 const_1 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0 const_0
+.outputs  x.0 x.1 x.2 x.3 x.4 x.5 x.6 x.7 x.8 x.9 x.10 x.11 x.12 x.13 x.14 x.15 y.0 y.1 y.2 y.3 y.4 y.5 y.6 y.7 y.8 y.9 y.10 y.11 y.12 y.13 y.14 y.15 z.0 z.1 z.2 z.3 z.4 z.5 z.6 z.7 z.8 z.9 z.10 z.11 z.12 z.13 z.14 z.15 garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage garbage
+.constants ------------------------------------------------1000000000000000000000000000000000000000000000000000000000000000
+.garbage ----------------111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+.begin
+t2 x19 x99
+t2 x17 x97
+t2 x23 x103
+t2 x16 x96
+t2 x25 x105
+t2 x20 x100
+t2 x21 x101
+t2 x22 x102
+t2 x18 x98
+t2 x27 x107
+t2 x31 x111
+t2 x29 x109
+t2 x26 x106
+t2 x30 x110
+t2 x28 x108
+t2 x24 x104
+t1 x97
+t2 x97 x50
+t2 x50 x98
+t3 x50 x98 x51
+t2 x51 x99
+t3 x51 x99 x52
+t2 x52 x100
+t3 x52 x100 x53
+t2 x53 x101
+t3 x53 x101 x54
+t2 x54 x102
+t3 x54 x102 x55
+t2 x55 x103
+t3 x55 x103 x56
+t2 x56 x104
+t3 x56 x104 x57
+t2 x57 x105
+t3 x57 x105 x58
+t2 x58 x106
+t3 x58 x106 x59
+t2 x59 x107
+t3 x59 x107 x60
+t2 x60 x108
+t3 x60 x108 x61
+t2 x61 x109
+t3 x61 x109 x62
+t2 x62 x110
+t3 x62 x110 x111
+.end

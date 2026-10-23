@@ -1,0 +1,10 @@
+# Phase-lane records: circuits below the lowest published no-gadget T-count on file (phase/PUBLISHED.tsv, ATQ_nogadget;
+# re-read from arXiv:2402.14396 Table 2 on 2026-10-22). Every wire is an arbitrary input; no ancillas, measurements or gadgets.
+# Proof: verifier/pathverify.c equiv BENCHMARK RECORD -> EQUAL (global phase w^0); re-run by make -f phase/Makefile.phase proof.
+# Benchmarks: meamy/feynman@d2c382a2ab43a40a87f12f4255645bbb55f704f8 benchmarks/qc/gf2^n_mult.qc, renamed gf2_n_mult.qc here.
+# Gate counts are read from the record bytes (T, T*, CNOT, H, S/S*, Z, CZ; Pauli X gates count only in total). Gadget constructions are lower (ATQ: 58, 70, 92).
+# benchmark	wires	published_nogadget	record_T	T*	CNOT	H	S	Z	CZ	total	record_sha256	benchmark_sha256	proof
+gf2^7_mult	21	104	103	0	1276	14	11	1	117	1522	6414615698ef661e6c2bc9f58cf9afa21b91f42ff22b75f4b42cfec36449d40e	e67ac1b4b5d249a89e20d57fdaff5f5b40192c9a5f31a76acccbbd938e91856c	EQUAL
+gf2^8_mult	24	123	113	0	5438	56	57	4	0	5679	8d66cf31d4dca0cf60fe9fd39b88ccb3ed6c29b01d4528843b1e03a1bb78b866	dd76f74551df269b7b1274b405105d353d82ba67a75930c1dc35ca8c41c6a4a6	EQUAL
+gf2^9_mult	27	161	139	0	10083	60	197	5	0	10489	de7d260f7b3c3adae0c64778dc69978dfed14416417ca2adf51c98605f83d338	259918a7b607a31d7273c020ecaf995604da596d16d211a4b0bf6b76ce5e65f2	EQUAL
+gf2^10_mult	30	196	177	0	3903	20	0	15	205	4320	161875bd40995221ae48b962afabae418cc1307071db0d6f7472141f90f53862	b9831bb0a11e6658ac44f7ebed97198d4f8b88c9f421c09e0839aeb102df8ae6	EQUAL
