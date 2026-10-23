@@ -1,0 +1,27 @@
+# HereLiesRevLib circuit: see records/RECORDS.tsv
+.version 2.0
+.numvars 13
+.variables x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12
+.inputs x1 x2 x3 x4 x5 0 0 0 0 0 0 1 0
+.outputs  g g g g g g g s1 g g s2 s0 g
+.constants -----00000010
+.garbage 1111111-11--1
+.begin
+t2 x1 x0
+t2 x3 x2
+t2 x4 x1
+t2 x0 x4
+t2 x4 x3
+t1 x0
+t1 x1
+t1 x2
+t3 x2 x3 x5
+t1 x7
+t3 x0 x1 x7
+t3 x5 x7 x10
+t2 x5 x7
+t4 x0 x1 x4 x10
+t3 x5 x4 x10
+t2 x2 x11
+t2 x4 x11
+.end
