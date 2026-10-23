@@ -1,0 +1,249 @@
+# HereLiesRevLib circuit: see records/RECORDS.tsv
+.version 2.0
+.numvars 134
+.variables x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31 x32 x33 x34 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48 x49 x50 x51 x52 x53 x54 x55 x56 x57 x58 x59 x60 x61 x62 x63 x64 x65 x66 x67 x68 x69 x70 x71 x72 x73 x74 x75 x76 x77 x78 x79 x80 x81 x82 x83 x84 x85 x86 x87 x88 x89 x90 x91 x92 x93 x94 x95 x96 x97 x98 x99 x100 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110 x111 x112 x113 x114 x115 x116 x117 x118 x119 x120 x121 x122 x123 x124 x125 x126 x127 x128 x129 x130 x131 x132 x133
+.inputs x.0 x.1 x.2 x.3 x.4 x.5 x.6 x.7 x.8 x.9 x.10 x.11 x.12 x.13 x.14 x.15 y.0 y.1 y.2 y.3 y.4 y.5 y.6 y.7 y.8 y.9 y.10 y.11 y.12 y.13 y.14 y.15 a.0 b.0 const_0 dupl_x_0.0 dupl_x_0.1 dupl_x_0.2 dupl_x_0.3 dupl_x_0.4 dupl_x_0.5 dupl_x_0.6 dupl_x_0.7 dupl_x_0.8 dupl_x_0.9 dupl_x_0.10 dupl_x_0.11 dupl_x_0.12 dupl_x_0.13 dupl_x_0.14 dupl_x_0.15 dupl_y_0.0 dupl_y_0.1 dupl_y_0.2 dupl_y_0.3 dupl_y_0.4 dupl_y_0.5 dupl_y_0.6 dupl_y_0.7 dupl_y_0.8 dupl_y_0.9 dupl_y_0.10 dupl_y_0.11 dupl_y_0.12 dupl_y_0.13 dupl_y_0.14 dupl_y_0.15 const_0 dupl_x_1.0 dupl_x_1.1 dupl_x_1.2 dupl_x_1.3 dupl_x_1.4 dupl_x_1.5 dupl_x_1.6 dupl_x_1.7 dupl_x_1.8 dupl_x_1.9 dupl_x_1.10 dupl_x_1.11 dupl_x_1.12 dupl_x_1.13 dupl_x_1.14 dupl_x_1.15 dupl_y_1.0 dupl_y_1.1 dupl_y_1.2 dupl_y_1.3 dupl_y_1.4 dupl_y_1.5 dupl_y_1.6 dupl_y_1.7 dupl_y_1.8 dupl_y_1.9 dupl_y_1.10 dupl_y_1.11 dupl_y_1.12 dupl_y_1.13 dupl_y_1.14 dupl_y_1.15 const_0 dupl_x_2.0 dupl_x_2.1 dupl_x_2.2 dupl_x_2.3 dupl_x_2.4 dupl_x_2.5 dupl_x_2.6 dupl_x_2.7 dupl_x_2.8 dupl_x_2.9 dupl_x_2.10 dupl_x_2.11 dupl_x_2.12 dupl_x_2.13 dupl_x_2.14 dupl_x_2.15 const_0 dupl_x_3.0 dupl_x_3.1 dupl_x_3.2 dupl_x_3.3 dupl_x_3.4 dupl_x_3.5 dupl_x_3.6 dupl_x_3.7 dupl_x_3.8 dupl_x_3.9 dupl_x_3.10 dupl_x_3.11 dupl_x_3.12 dupl_x_3.13 dupl_x_3.14 dupl_x_3.15
+.outputs  x.0 x.1 x.2 x.3 x.4 x.5 x.6 x.7 x.8 x.9 x.10 x.11 x.12 x.13 x.14 x.15 y.0 y.1 y.2 y.3 y.4 y.5 y.6 y.7 y.8 y.9 y.10 y.11 y.12 y.13 y.14 y.15 a.0 b.0 garbage dupl_x_0.0 dupl_x_0.1 dupl_x_0.2 dupl_x_0.3 dupl_x_0.4 dupl_x_0.5 dupl_x_0.6 dupl_x_0.7 dupl_x_0.8 dupl_x_0.9 dupl_x_0.10 dupl_x_0.11 dupl_x_0.12 dupl_x_0.13 dupl_x_0.14 dupl_x_0.15 dupl_y_0.0 dupl_y_0.1 dupl_y_0.2 dupl_y_0.3 dupl_y_0.4 dupl_y_0.5 dupl_y_0.6 dupl_y_0.7 dupl_y_0.8 dupl_y_0.9 dupl_y_0.10 dupl_y_0.11 dupl_y_0.12 dupl_y_0.13 dupl_y_0.14 dupl_y_0.15 garbage dupl_x_1.0 dupl_x_1.1 dupl_x_1.2 dupl_x_1.3 dupl_x_1.4 dupl_x_1.5 dupl_x_1.6 dupl_x_1.7 dupl_x_1.8 dupl_x_1.9 dupl_x_1.10 dupl_x_1.11 dupl_x_1.12 dupl_x_1.13 dupl_x_1.14 dupl_x_1.15 dupl_y_1.0 dupl_y_1.1 dupl_y_1.2 dupl_y_1.3 dupl_y_1.4 dupl_y_1.5 dupl_y_1.6 dupl_y_1.7 dupl_y_1.8 dupl_y_1.9 dupl_y_1.10 dupl_y_1.11 dupl_y_1.12 dupl_y_1.13 dupl_y_1.14 dupl_y_1.15 garbage dupl_x_2.0 dupl_x_2.1 dupl_x_2.2 dupl_x_2.3 dupl_x_2.4 dupl_x_2.5 dupl_x_2.6 dupl_x_2.7 dupl_x_2.8 dupl_x_2.9 dupl_x_2.10 dupl_x_2.11 dupl_x_2.12 dupl_x_2.13 dupl_x_2.14 dupl_x_2.15 garbage dupl_x_3.0 dupl_x_3.1 dupl_x_3.2 dupl_x_3.3 dupl_x_3.4 dupl_x_3.5 dupl_x_3.6 dupl_x_3.7 dupl_x_3.8 dupl_x_3.9 dupl_x_3.10 dupl_x_3.11 dupl_x_3.12 dupl_x_3.13 dupl_x_3.14 dupl_x_3.15
+.constants ----------------------------------0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+.garbage --------------------------------111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+.begin
+t2 x5 x40
+t2 x1 x36
+t2 x2 x37
+t2 x6 x41
+t2 x3 x38
+t2 x0 x35
+t2 x7 x42
+t2 x4 x39
+t2 x10 x45
+t2 x8 x43
+t2 x12 x47
+t2 x20 x55
+t2 x9 x44
+t2 x11 x46
+t2 x13 x48
+t2 x24 x59
+t2 x21 x56
+t2 x14 x49
+t2 x18 x53
+t2 x15 x50
+t2 x22 x57
+t2 x23 x58
+t2 x25 x60
+t2 x35 x101
+t2 x28 x63
+t2 x29 x64
+t2 x17 x52
+t2 x19 x54
+t2 x36 x102
+t2 x26 x61
+t2 x27 x62
+t3 x32 x33 x100
+t2 x31 x66
+t2 x38 x104
+t2 x30 x65
+t2 x43 x109
+t2 x37 x103
+t2 x42 x108
+t2 x39 x105
+t2 x40 x106
+t2 x47 x113
+t2 x46 x112
+t2 x48 x114
+t2 x45 x111
+t2 x41 x107
+t2 x49 x115
+t2 x44 x110
+t16 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110 x111 x112 x113 x114 x115 x116
+t15 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110 x111 x112 x113 x114 x115
+t14 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110 x111 x112 x113 x114
+t2 x50 x116
+t13 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110 x111 x112 x113
+t12 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110 x111 x112
+t11 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110 x111
+t10 x101 x102 x103 x104 x105 x106 x107 x108 x109 x110
+t9 x101 x102 x103 x104 x105 x106 x107 x108 x109
+t8 x101 x102 x103 x104 x105 x106 x107 x108
+t7 x101 x102 x103 x104 x105 x106 x107
+t6 x101 x102 x103 x104 x105 x106
+t5 x101 x102 x103 x104 x105
+t4 x101 x102 x103 x104
+t3 x101 x102 x103
+t2 x54 x104
+t2 x101 x102
+t2 x60 x110
+t2 x57 x107
+t2 x52 x102
+t2 x53 x103
+t2 x56 x106
+t2 x55 x105
+t2 x64 x114
+t2 x61 x111
+t2 x58 x108
+t2 x63 x113
+t2 x65 x115
+t2 x59 x109
+t2 x62 x112
+t2 x66 x116
+t1 x35
+t2 x35 x36
+t3 x35 x36 x37
+t4 x35 x36 x37 x38
+t5 x35 x36 x37 x38 x39
+t6 x35 x36 x37 x38 x39 x40
+t7 x35 x36 x37 x38 x39 x40 x41
+t8 x35 x36 x37 x38 x39 x40 x41 x42
+t9 x35 x36 x37 x38 x39 x40 x41 x42 x43
+t10 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44
+t11 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45
+t12 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46
+t13 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47
+t14 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48
+t15 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48 x49
+t16 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48 x49 x50
+t2 x102 x36
+t2 x104 x38
+t2 x106 x40
+t2 x105 x39
+t2 x103 x37
+t3 x100 x39 x105
+t2 x107 x41
+t3 x100 x38 x104
+t3 x100 x37 x103
+t3 x100 x36 x102
+t2 x109 x43
+t2 x108 x42
+t3 x100 x40 x106
+t3 x100 x42 x108
+t3 x100 x41 x107
+t2 x110 x44
+t2 x111 x45
+t2 x112 x46
+t3 x100 x44 x110
+t3 x100 x43 x109
+t2 x114 x48
+t3 x100 x46 x112
+t3 x100 x45 x111
+t2 x113 x47
+t2 x116 x50
+t2 x115 x49
+t3 x100 x49 x115
+t1 x23
+t1 x19
+t1 x24
+t3 x100 x50 x116
+t1 x17
+t3 x100 x47 x113
+t1 x20
+t1 x16
+t1 x18
+t3 x100 x48 x114
+t1 x28
+t1 x27
+t1 x26
+t1 x22
+t1 x21
+t1 x25
+t1 x30
+t1 x29
+t1 x32
+t2 x33 x32
+t1 x31
+t2 x0 x118
+t2 x32 x117
+t2 x2 x120
+t2 x3 x121
+t2 x1 x119
+t2 x5 x123
+t2 x4 x122
+t2 x9 x127
+t2 x12 x130
+t2 x14 x132
+t2 x6 x124
+t2 x10 x128
+t2 x8 x126
+t2 x11 x129
+t2 x7 x125
+t2 x13 x131
+t2 x15 x133
+t16 x118 x119 x120 x121 x122 x123 x124 x125 x126 x127 x128 x129 x130 x131 x132 x133
+t15 x118 x119 x120 x121 x122 x123 x124 x125 x126 x127 x128 x129 x130 x131 x132
+t14 x118 x119 x120 x121 x122 x123 x124 x125 x126 x127 x128 x129 x130 x131
+t13 x118 x119 x120 x121 x122 x123 x124 x125 x126 x127 x128 x129 x130
+t12 x118 x119 x120 x121 x122 x123 x124 x125 x126 x127 x128 x129
+t11 x118 x119 x120 x121 x122 x123 x124 x125 x126 x127 x128
+t10 x118 x119 x120 x121 x122 x123 x124 x125 x126 x127
+t9 x118 x119 x120 x121 x122 x123 x124 x125 x126
+t8 x118 x119 x120 x121 x122 x123 x124 x125
+t7 x118 x119 x120 x121 x122 x123 x124
+t6 x118 x119 x120 x121 x122 x123
+t5 x118 x119 x120 x121 x122
+t4 x118 x119 x120 x121
+t3 x118 x119 x120
+t2 x118 x119
+t1 x118
+t2 x20 x122
+t2 x18 x120
+t2 x16 x118
+t2 x21 x123
+t2 x17 x119
+t2 x22 x124
+t2 x23 x125
+t2 x19 x121
+t2 x26 x128
+t2 x27 x129
+t2 x28 x130
+t2 x25 x127
+t2 x24 x126
+t2 x29 x131
+t2 x31 x133
+t2 x30 x132
+t1 x0
+t2 x0 x1
+t3 x0 x1 x2
+t4 x0 x1 x2 x3
+t5 x0 x1 x2 x3 x4
+t6 x0 x1 x2 x3 x4 x5
+t7 x0 x1 x2 x3 x4 x5 x6
+t8 x0 x1 x2 x3 x4 x5 x6 x7
+t9 x0 x1 x2 x3 x4 x5 x6 x7 x8
+t10 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9
+t11 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10
+t12 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11
+t13 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12
+t14 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13
+t15 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14
+t16 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15
+t2 x118 x0
+t2 x120 x2
+t2 x119 x1
+t3 x117 x0 x118
+t2 x121 x3
+t3 x117 x3 x121
+t3 x117 x1 x119
+t2 x122 x4
+t3 x117 x2 x120
+t2 x123 x5
+t2 x124 x6
+t3 x117 x5 x123
+t2 x126 x8
+t3 x117 x4 x122
+t3 x117 x6 x124
+t2 x125 x7
+t3 x117 x7 x125
+t3 x117 x8 x126
+t2 x127 x9
+t2 x128 x10
+t3 x117 x9 x127
+t2 x129 x11
+t2 x130 x12
+t3 x117 x11 x129
+t3 x117 x12 x130
+t3 x117 x10 x128
+t2 x131 x13
+t2 x132 x14
+t3 x117 x14 x132
+t3 x117 x13 x131
+t2 x133 x15
+t3 x117 x15 x133
+.end

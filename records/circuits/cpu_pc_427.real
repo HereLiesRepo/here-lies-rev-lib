@@ -1,0 +1,41 @@
+# HereLiesRevLib circuit: see records/RECORDS.tsv
+.version 2.0
+.numvars 93
+.variables x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31 x32 x33 x34 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48 x49 x50 x51 x52 x53 x54 x55 x56 x57 x58 x59 x60 x61 x62 x63 x64 x65 x66 x67 x68 x69 x70 x71 x72 x73 x74 x75 x76 x77 x78 x79 x80 x81 x82 x83 x84 x85 x86 x87 x88 x89 x90 x91 x92
+.inputs reset.0 enable.0 jump.0 jump.1 jump.2 jump.3 jump.4 jump.5 jump.6 jump.7 jump.8 jump.9 jump.10 pc.0 pc.1 pc.2 pc.3 pc.4 pc.5 pc.6 pc.7 pc.8 pc.9 pc.10 zero.0 zero.1 zero.2 zero.3 zero.4 zero.5 zero.6 zero.7 zero.8 zero.9 zero.10 const_0 dupl_jump_0.0 dupl_jump_0.1 dupl_jump_0.2 dupl_jump_0.3 dupl_jump_0.4 dupl_jump_0.5 dupl_jump_0.6 dupl_jump_0.7 dupl_jump_0.8 dupl_jump_0.9 dupl_jump_0.10 dupl_pc_0.0 dupl_pc_0.1 dupl_pc_0.2 dupl_pc_0.3 dupl_pc_0.4 dupl_pc_0.5 dupl_pc_0.6 dupl_pc_0.7 dupl_pc_0.8 dupl_pc_0.9 dupl_pc_0.10 dupl_zero_0.0 dupl_zero_0.1 dupl_zero_0.2 dupl_zero_0.3 dupl_zero_0.4 dupl_zero_0.5 dupl_zero_0.6 dupl_zero_0.7 dupl_zero_0.8 dupl_zero_0.9 dupl_zero_0.10 const_0 dupl_jump_1.0 dupl_jump_1.1 dupl_jump_1.2 dupl_jump_1.3 dupl_jump_1.4 dupl_jump_1.5 dupl_jump_1.6 dupl_jump_1.7 dupl_jump_1.8 dupl_jump_1.9 dupl_jump_1.10 dupl_pc_1.0 dupl_pc_1.1 dupl_pc_1.2 dupl_pc_1.3 dupl_pc_1.4 dupl_pc_1.5 dupl_pc_1.6 dupl_pc_1.7 dupl_pc_1.8 dupl_pc_1.9 dupl_pc_1.10 const_0
+.outputs  reset.0 enable.0 jump.0 jump.1 jump.2 jump.3 jump.4 jump.5 jump.6 jump.7 jump.8 jump.9 jump.10 pc.0 pc.1 pc.2 pc.3 pc.4 pc.5 pc.6 pc.7 pc.8 pc.9 pc.10 zero.0 zero.1 zero.2 zero.3 zero.4 zero.5 zero.6 zero.7 zero.8 zero.9 zero.10 garbage dupl_jump_0.0 dupl_jump_0.1 dupl_jump_0.2 dupl_jump_0.3 dupl_jump_0.4 dupl_jump_0.5 dupl_jump_0.6 dupl_jump_0.7 dupl_jump_0.8 dupl_jump_0.9 dupl_jump_0.10 dupl_pc_0.0 dupl_pc_0.1 dupl_pc_0.2 dupl_pc_0.3 dupl_pc_0.4 dupl_pc_0.5 dupl_pc_0.6 dupl_pc_0.7 dupl_pc_0.8 dupl_pc_0.9 dupl_pc_0.10 dupl_zero_0.0 dupl_zero_0.1 dupl_zero_0.2 dupl_zero_0.3 dupl_zero_0.4 dupl_zero_0.5 dupl_zero_0.6 dupl_zero_0.7 dupl_zero_0.8 dupl_zero_0.9 dupl_zero_0.10 garbage dupl_jump_1.0 dupl_jump_1.1 dupl_jump_1.2 dupl_jump_1.3 dupl_jump_1.4 dupl_jump_1.5 dupl_jump_1.6 dupl_jump_1.7 dupl_jump_1.8 dupl_jump_1.9 dupl_jump_1.10 dupl_pc_1.0 dupl_pc_1.1 dupl_pc_1.2 dupl_pc_1.3 dupl_pc_1.4 dupl_pc_1.5 dupl_pc_1.6 dupl_pc_1.7 dupl_pc_1.8 dupl_pc_1.9 dupl_pc_1.10 const_0
+.constants ------------------------000000000000000000000000000000000000000000000000000000000000000000000
+.garbage 1111111111111-----------111111111111111111111111111111111111111111111111111111111111111111111
+.begin
+t2 x2 x13
+t2 x3 x14
+t2 x4 x15
+t2 x5 x16
+t2 x6 x17
+t2 x7 x18
+t2 x8 x19
+t2 x9 x20
+t2 x10 x21
+t2 x11 x22
+t2 x1 x69
+t2 x2 x70
+t3 x1 x13 x70
+t2 x3 x71
+t3 x1 x14 x71
+t2 x4 x72
+t3 x1 x15 x72
+t2 x5 x73
+t3 x1 x16 x73
+t2 x6 x74
+t3 x1 x17 x74
+t2 x7 x75
+t3 x1 x18 x75
+t2 x8 x76
+t3 x1 x19 x76
+t2 x9 x77
+t3 x1 x20 x77
+t2 x10 x78
+t3 x1 x21 x78
+t2 x11 x79
+t3 x1 x22 x79
+.end

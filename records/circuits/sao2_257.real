@@ -1,0 +1,97 @@
+# HereLiesRevLib circuit: see records/RECORDS.tsv
+.version  1.0
+.numvars 14
+.variables  f3 f2 f1 f0 x9 x8 x7 x6 x5 x4 x3 x2 x1 x0
+.inputs  0 0 0 0 x9 x8 x7 x6 x5 x4 x3 x2 x1 x0
+.outputs  f3 f2 f1 f0 x9 x8 x7 x6 x5 x4 x3 x2 x1 x0
+.constants 0000----------
+.garbage 1111111111----
+.begin
+t1 x9
+t2 x9 f2
+t1 x5
+t3 x5 x9 f3
+t8 f3 x1 x2 x3 x4 x8 x6 f1
+t2 f1 f2
+t2 f1 f3
+t8 x0 x2 x4 x5 x6 x7 x9 f1
+t8 x0 x2 x4 x5 x6 x7 x9 f2
+t8 x0 x2 x4 x5 x6 x7 x9 f3
+t9 f3 x0 x1 x3 x4 x8 x6 x7 f2
+t2 f2 f3
+t2 f1 f3
+t2 x9 f3
+t1 x6
+t9 f3 x0 x1 x2 x3 x8 x6 x7 f0
+t2 f0 f1
+t8 f3 x0 x1 x2 x3 x4 x7 f0
+t8 f3 x0 x1 x2 x3 x4 x7 f2
+t10 x0 x1 x2 x3 x4 x5 x6 x7 x9 f3
+t1 x4
+t8 f3 x0 x1 x3 x4 x8 x7 f1
+t8 f3 x0 x1 x3 x4 x8 x7 f2
+t9 x0 x1 x3 x4 x5 x7 x8 x9 f3
+t1 x8
+t8 f3 x0 x1 x2 x3 x6 x7 f0
+t3 f3 f0 f1
+t3 f2 f0 f3
+t9 x0 x3 x4 x5 x6 x7 x8 x9 f2
+t1 x6
+t1 x4
+t1 x3
+t10 x0 x2 x3 x4 x5 x6 x7 x8 x9 f1
+t10 x0 x2 x3 x4 x5 x6 x7 x8 x9 f2
+t8 f2 x0 x2 x7 x4 x5 x6 f3
+t1 x8
+t1 x3
+t1 x2
+t9 x1 x2 x3 x5 x6 x7 x8 x9 f1
+t9 x1 x2 x3 x4 x5 x7 x8 x9 f0
+t8 x1 x2 x3 x5 x7 x8 x9 f0
+t1 x2
+t1 x1
+t1 x8
+t10 x0 x1 x2 x4 x5 x6 x7 x8 x9 f2
+t10 x0 x1 x2 x4 x5 x6 x7 x8 x9 f3
+t8 f3 x0 x7 x2 x3 x4 x8 f0
+t3 f0 x1 f1
+t3 f0 x1 f2
+t3 f0 x1 f3
+t1 x3
+t10 x0 x1 x2 x3 x4 x5 x6 x7 x9 f0
+t3 f0 x3 f1
+t1 x6
+t9 f3 x0 x1 x2 x3 x8 x6 x7 f2
+t1 x4
+t9 f3 x0 x1 x3 x4 x8 x6 x7 f1
+t1 x2
+t9 f3 x1 x2 x3 x4 x8 x6 x7 f0
+t8 f3 x1 x2 x4 x8 x6 x7 f1
+t4 f0 x1 x2 f2
+t1 x3
+t1 x8
+t1 x6
+t1 x4
+t1 x1
+t1 x0
+t1 x7
+t4 f1 x0 x7 f0
+t3 x7 f0 f1
+t8 f3 x0 x1 x6 x3 x4 x8 f0
+t4 f0 x2 x4 f1
+t4 f0 x2 x4 f2
+t9 x0 x1 x2 x3 x5 x6 x8 x9 f3
+t1 x4
+t10 f2 x0 x1 x2 x3 x8 x5 x6 x7 f3
+t9 x0 x1 x2 x3 x4 x5 x8 x9 f2
+t1 x6
+t8 f3 x0 x1 x2 x3 x4 x6 f0
+t1 x8
+t8 f3 x0 x2 x3 x4 x8 x6 f0
+t8 f3 x0 x2 x3 x4 x8 x6 f1
+t8 f3 x0 x2 x3 x4 x8 x6 f2
+t9 f3 x0 x1 x2 x3 x4 x7 x6 f0
+t9 f3 x0 x1 x2 x3 x4 x7 x6 f1
+t1 x1
+t9 f2 x0 x1 x2 x8 x4 x5 x6 f3
+.end

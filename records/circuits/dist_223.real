@@ -1,0 +1,288 @@
+# revopt: quantum-cost objective, exact equivalence checked over every free-input assignment
+.version  1.0
+.numvars 13
+.variables  f4 f3 f2 f1 f0 x7 x6 x5 x4 x3 x2 x1 x0
+.inputs  0 0 0 0 0 x7 x6 x5 x4 x3 x2 x1 x0
+.outputs  f4 f3 f2 f1 f0 x7 x6 x5 x4 x3 x2 x1 x0
+.constants 00000--------
+.garbage 11111111-----
+.begin
+t2 x0 x4
+t2 x2 x6
+t2 x4 x3
+t2 x1 x5
+t2 x4 x5
+t2 x0 f4
+t4 x6 x1 x0 f4
+t4 x4 x3 x0 f4
+t1 x7
+t6 x7 x5 x2 x1 x0 f4
+t6 x7 x6 x5 x1 x0 f4
+t1 x7
+t1 x5
+t5 x6 x5 x4 x0 f4
+t1 x5
+t1 x4
+t6 x6 x4 x3 x1 x0 f4
+t1 x6
+t7 x6 x5 x4 x2 x1 x0 f4
+t4 x6 x4 x2 f4
+t8 x7 x6 x5 x4 x3 x1 x0 f4
+t8 x7 x6 x5 x4 x3 x2 x1 f4
+t1 x5
+t6 x7 x5 x4 x3 x0 f4
+t1 x7
+t6 x7 x6 x5 x4 x3 f4
+t1 x7
+t1 x5
+t1 x3
+t6 x7 x4 x3 x2 x1 f4
+t1 x7
+t9 x7 x6 x5 x4 x3 x2 x1 x0 f4
+t1 x6
+t1 x4
+t1 x3
+t1 x2
+t3 x2 x1 f4
+t1 x5
+t5 x5 x4 x2 x0 f4
+t1 x5
+t1 x4
+t5 x4 x3 x2 x1 f4
+t1 x3
+t6 x5 x4 x3 x2 x0 f4
+t7 x7 x4 x3 x2 x1 x0 f4
+t1 x7
+t1 x4
+t1 x3
+t1 x2
+t1 x1
+t8 x7 x6 x4 x3 x2 x1 x0 f4
+t6 x7 x6 x3 x1 x0 f4
+t1 x4
+t6 x7 x6 x4 x2 x1 f4
+t5 x7 x4 x1 x0 f4
+t6 x6 x4 x3 x2 x1 f4
+t1 x3
+t6 x5 x4 x3 x2 x1 f4
+t1 x3
+t1 x1
+t1 x0
+t3 x7 x0 f4
+t6 x5 x3 x2 x1 x0 f4
+t8 x7 x6 x5 x4 x3 x2 x0 f4
+t1 x7
+t1 x6
+t6 x7 x6 x4 x1 x0 f4
+t1 x6
+t1 x3
+t7 x7 x6 x5 x3 x2 x0 f4
+t7 x7 x6 x3 x2 x1 x0 f4
+t1 x7
+t1 x3
+t1 x2
+t7 x6 x5 x4 x2 x1 x0 f4
+t1 x4
+t1 x2
+t1 x0
+t2 x2 f3
+t7 x7 x6 x5 x3 x1 x0 f3
+t4 x5 x4 x0 f3
+t1 x7
+t6 x7 x5 x3 x2 x1 f3
+t1 x7
+t1 x4
+t6 x7 x5 x4 x3 x2 f3
+t4 x7 x4 x0 f3
+t1 x7
+t6 x7 x6 x4 x3 x1 f3
+t6 x7 x6 x4 x2 x0 f3
+t1 x7
+t1 x6
+t6 x7 x6 x4 x3 x0 f3
+t6 x6 x4 x3 x2 x0 f3
+t1 x3
+t5 x4 x3 x1 x0 f3
+t5 x5 x4 x3 x1 f3
+t5 x6 x4 x3 x1 f3
+t1 x7
+t1 x5
+t7 x7 x6 x5 x4 x3 x2 f3
+t1 x7
+t1 x6
+t1 x5
+t1 x3
+t1 x2
+t5 x5 x3 x2 x0 f3
+t6 x7 x5 x4 x2 x0 f3
+t1 x5
+t7 x7 x6 x5 x4 x2 x1 f3
+t1 x6
+t7 x6 x5 x4 x3 x2 x1 f3
+t1 x6
+t1 x2
+t1 x1
+t3 x1 x0 f3
+t6 x6 x5 x3 x1 x0 f3
+t7 x7 x4 x3 x2 x1 x0 f3
+t5 x6 x4 x1 x0 f3
+t9 x7 x6 x5 x4 x3 x2 x1 x0 f3
+t1 x5
+t1 x4
+t1 x2
+t5 x3 x2 x1 x0 f3
+t1 x2
+t1 x1
+t1 x0
+t3 x6 x0 f3
+t5 x7 x4 x1 x0 f3
+t1 x7
+t5 x7 x2 x1 x0 f3
+t1 x4
+t1 x3
+t8 x7 x5 x4 x3 x2 x1 x0 f3
+t1 x3
+t1 x5
+t1 x1
+t6 x5 x4 x2 x1 x0 f3
+t1 x5
+t1 x4
+t1 x1
+t1 x0
+t2 x5 f2
+t3 x2 x1 f2
+t7 x6 x5 x4 x3 x2 x0 f2
+t1 x6
+t7 x7 x6 x5 x3 x2 x1 f2
+t1 x7
+t1 x4
+t6 x6 x5 x4 x3 x2 f2
+t6 x7 x6 x4 x3 x0 f2
+t1 x7
+t1 x5
+t6 x7 x5 x4 x3 x1 f2
+t1 x7
+t6 x6 x5 x4 x3 x0 f2
+t1 x6
+t1 x3
+t7 x6 x5 x4 x3 x1 x0 f2
+t1 x4
+t1 x3
+t1 x2
+t5 x5 x4 x2 x0 f2
+t1 x1
+t3 x4 x1 f2
+t1 x4
+t5 x6 x4 x2 x0 f2
+t1 x2
+t6 x6 x3 x2 x1 x0 f2
+t1 x6
+t7 f3 x7 x6 x1 x4 x3 f2
+t1 x3
+t6 x4 x3 x2 x1 x0 f2
+t1 x3
+t1 x2
+t7 x7 x6 x5 x4 x2 x1 f2
+t1 x6
+t1 x5
+t1 x2
+t1 x1
+t1 x0
+t5 x6 x2 x1 x0 f2
+t1 x6
+t7 x6 x5 x4 x2 x1 x0 f2
+t1 x7
+t1 x5
+t6 x7 x5 x4 x1 x0 f2
+t1 x7
+t6 x7 x6 x5 x4 x0 f2
+t1 x7
+t8 x7 x6 x5 x4 x3 x1 x0 f2
+t1 x7
+t1 x6
+t1 x5
+t1 x4
+t1 x2
+t7 x7 x6 x4 x2 x1 x0 f2
+t1 x2
+t1 x7
+t1 x6
+t1 x4
+t1 x1
+t8 x7 x6 x4 x3 x2 x1 x0 f2
+t1 x7
+t1 x4
+t1 x1
+t1 x0
+t2 x4 f1
+t4 x5 x2 x1 f1
+t6 x5 x4 x3 x2 x1 f1
+t7 x7 x6 x5 x3 x2 x1 f1
+t1 x4
+t3 x4 x0 f1
+t7 x7 x6 x5 x4 x3 x0 f1
+t1 x6
+t1 x5
+t4 x5 x4 x1 f1
+t1 x5
+t1 x2
+t6 x6 x5 x4 x2 x0 f1
+t1 x2
+t1 x1
+t6 x5 x4 x2 x1 x0 f1
+t1 x6
+t7 x7 x6 x4 x3 x2 x1 f1
+t1 x6
+t1 x4
+t1 x1
+t1 x0
+t6 x6 x5 x2 x1 x0 f1
+t8 x6 x5 x4 x3 x2 x1 x0 f1
+t1 x6
+t1 x4
+t6 x6 x4 x2 x1 x0 f1
+t1 x5
+t6 x6 x5 x4 x1 x0 f1
+t1 x6
+t1 x7
+t1 x3
+t7 f4 x7 x6 x1 x4 x3 f1
+t1 x7
+t1 x5
+t1 x4
+t1 x3
+t1 x2
+t8 x7 x6 x5 x4 x2 x1 x0 f1
+t1 x2
+t1 x6
+t1 x4
+t1 x1
+t8 f2 x7 x6 x1 x4 x3 x2 f1
+t1 x6
+t1 x4
+t1 x1
+t1 x0
+t5 x5 x4 x2 x1 f0
+t6 f2 x6 x5 x2 x0 f0
+t1 x6
+t6 f2 x2 x6 x5 x4 f0
+t1 x4
+t3 x4 x0 f0
+t1 x2
+t8 x7 x6 x5 x4 x3 x2 x0 f0
+t6 x6 x5 x4 x2 x0 f0
+t1 x2
+t1 x5
+t1 x1
+t5 x5 x4 x1 x0 f0
+t9 x7 x6 x5 x4 x3 x2 x1 x0 f0
+t1 x6
+t1 x5
+t1 x4
+t1 x1
+t1 x0
+t6 x6 x5 x4 x1 x0 f0
+t1 x7
+t1 x2
+t7 f3 x7 x1 x5 x0 x2 f0
+.end
