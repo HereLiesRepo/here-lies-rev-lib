@@ -1,0 +1,44 @@
+# phase/Makefile.phase -- the phase lane's public court: builds the two provers, runs their planted-cheater selftests,
+# re-proves the published control outputs against their inputs with both provers, and refuses a planted cheater (one T
+# inverted in a proven output). The optimizer that made the outputs (Richard) is part of Witchcraft(TM) and is not
+# published; this court checks its work, not its recipe. Run from the repo root:
+#   make -f phase/Makefile.phase proof
+CC ?= cc
+CFLAGS ?= -std=c11 -O2 -Wall -Wextra
+B := phase/.build
+C := phase/controls
+.PHONY: proof build clean verifier-cost
+build: $(B)/pathverify $(B)/phaseverify $(B)/revverify
+$(B)/pathverify: verifier/pathverify.c ; @mkdir -p $(B) && $(CC) $(CFLAGS) -o $@ $<
+$(B)/revverify: verifier/revverify.c ; @mkdir -p $(B) && $(CC) $(CFLAGS) -o $@ $<
+$(B)/phaseverify: verifier/phaseverify.c ; @mkdir -p $(B) && $(CC) $(CFLAGS) -D_POSIX_C_SOURCE=200809L -o $@ $<
+proof: build
+	$(B)/pathverify selftest | tail -1 | grep -qx 'selftest: every control holds'
+	$(B)/phaseverify selftest | tail -1 | grep -qx 'selftest: every control holds'
+	$(B)/pathverify equiv $(C)/allegedly_control.qc $(C)/allegedly_control.out.qc | grep -q '^EQUAL'
+	$(B)/phaseverify equiv $(C)/allegedly_control.qc $(C)/allegedly_control.out.qc | grep -q '^EQUAL'
+	$(B)/phaseverify --zero-ancillas equiv $(C)/zero_ancilla_guess_control.qc $(C)/zero_ancilla_guess_control.out.qc | grep -q '^EQUAL'
+	awk 'BEGIN{d=0} /^T /&&!d{print "T* " $$2; d=1; next} {print}' $(C)/allegedly_control.out.qc > $(B)/cheat.qc
+	$(B)/pathverify equiv $(C)/allegedly_control.qc $(B)/cheat.qc | grep -q '^NOT_EQUAL'
+	$(B)/phaseverify equiv $(C)/allegedly_control.qc $(B)/cheat.qc | grep -q '^NOT_EQUAL'
+	$(CC) -std=c11 -O1 -fsanitize=undefined -fno-sanitize-recover=all -D_POSIX_C_SOURCE=200809L -o $(B)/phaseverify_ub verifier/phaseverify.c
+	$(B)/phaseverify_ub selftest | grep -q '^checked 128-bit edge .* ok '
+	$(B)/phaseverify expand $(C)/wide_inputs.qc | grep -qx '\.i q61 q62 q63'
+	$(B)/pathverify equiv $(C)/nonlinear_output_control.qc $(C)/nonlinear_output_control.out.qc | grep -q '^EQUAL'
+	awk '/^tof/{c++; if(c==70) next} {print}' $(C)/nonlinear_output_control.out.qc > $(B)/nlo_cheat.qc
+	$(B)/pathverify equiv $(C)/nonlinear_output_control.qc $(B)/nlo_cheat.qc | grep -q '^NOT_EQUAL'
+	$(B)/revverify qc2real $(C)/nonlinear_output_control.qc > $(B)/nlo_a.real && $(B)/revverify qc2real $(C)/nonlinear_output_control.out.qc > $(B)/nlo_b.real
+	$(B)/revverify qc2real $(B)/nlo_cheat.qc > $(B)/nlo_c.real
+	$(B)/revverify equiv $(B)/nlo_a.real $(B)/nlo_b.real | grep -qx 'equivalent=yes'
+	$(B)/revverify equiv $(B)/nlo_a.real $(B)/nlo_c.real | grep -qx 'equivalent=NO'
+	! $(B)/revverify qc2real $(C)/allegedly_control.out.qc > /dev/null 2>&1
+	for r in 7:103 8:113 9:139 10:177; do n=$${r%:*}; t=$${r#*:}; f=phase/records/gf2_$${n}_mult.$${t}t.qc; \
+	  $(B)/pathverify equiv phase/records/gf2_$${n}_mult.qc $$f | grep -q '^EQUAL' || exit 1; \
+	  test "$$(grep -c '^T ' $$f)" = "$$t" && test "$$(grep -c '^T\*' $$f)" = 0 || exit 1; \
+	  awk '/^T /&&!d{d=1;next}{print}' $$f > $(B)/rec_cheat.qc; \
+	  $(B)/pathverify equiv phase/records/gf2_$${n}_mult.qc $(B)/rec_cheat.qc | grep -q '^NOT_EQUAL' || exit 1; done
+	@echo 'phase court: both provers hold every control; the published control outputs are proven EQUAL by both; the planted cheater is refused by both; the nonlinear-output control is proven and its cheater refused, by pathverify and as a permutation; a phase circuit is refused as classical; the four records are proven, their T recounted, and a dropped T refused for each'
+# revverify's cost arithmetic at 62/63/64 controls, Fredkin and summed costs (REVLIB-COST-OVERFLOW-20261022)
+verifier-cost:
+	sh verifier/test_cost.sh
+clean: ; rm -rf $(B)

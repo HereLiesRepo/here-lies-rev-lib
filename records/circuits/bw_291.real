@@ -1,0 +1,290 @@
+# HereLiesRevLib circuit: see records/RECORDS.tsv
+.version 2.0
+.numvars 87
+.variables x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31 x32 x33 x34 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48 x49 x50 x51 x52 x53 x54 x55 x56 x57 x58 x59 x60 x61 x62 x63 x64 x65 x66 x67 x68 x69 x70 x71 x72 x73 x74 x75 x76 x77 x78 x79 x80 x81 x82 x83 x84 x85 x86
+.inputs x0 x1 x2 x3 x4 1 0 0 0 1 0 1 0 1 1 1 0 0 0 1 0 1 0 0 1 1 0 1 0 1 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 1 0 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 1 1 0 0 1 0 0 1 1 0 0 0 0
+.outputs  g g g g g g g g g g g g f0 g f23 g f1 g g g f2 g f3 g g g g f4 g g f5 g g g f6 g g g f7 g f8 g g f9 g g f10 g g g g f11 g g f12 g g f13 f25 g f24 f14 g g f15 g f16 g g f17 g g g f18 g g f19 g f20 g f21 f22 g g f26 g f27
+.constants -----1000101011100010100110101000000000111100100001100000100000100000000011100100110000
+.garbage 111111111111-1-1-111-1-1111-11-111-111-1-11-11-1111-11-11--1--11-1-11-111-11-1-1--11-1-
+.begin
+t2 x4 x3
+t2 x2 x3
+t1 x2
+t2 x2 x1
+t2 x4 x1
+t2 x3 x4
+t1 x0
+t6 x0 x1 x2 x3 x4 x6
+t5 x0 x1 x2 x3 x7
+t5 x0 x1 x3 x4 x8
+t5 x0 x1 x2 x4 x10
+t5 x0 x2 x3 x4 x17
+t5 x1 x2 x3 x4 x18
+t4 x0 x2 x4 x23
+t4 x0 x3 x4 x26
+t4 x0 x1 x2 x28
+t4 x0 x2 x3 x31
+t4 x2 x3 x4 x32
+t4 x0 x1 x3 x33
+t4 x0 x1 x4 x35
+t3 x0 x3 x36
+t4 x1 x2 x4 x37
+t3 x0 x2 x44
+t4 x1 x2 x3 x47
+t3 x0 x4 x48
+t3 x0 x1 x49
+t3 x2 x4 x52
+t3 x1 x2 x53
+t3 x2 x3 x55
+t2 x0 x12
+t2 x2 x12
+t2 x44 x12
+t2 x36 x12
+t2 x7 x12
+t2 x8 x12
+t2 x17 x12
+t2 x18 x12
+t2 x6 x12
+t1 x14
+t2 x0 x14
+t2 x49 x14
+t2 x44 x14
+t2 x36 x14
+t2 x33 x16
+t2 x7 x16
+t2 x23 x16
+t2 x26 x16
+t2 x16 x14
+t2 x35 x14
+t2 x37 x14
+t2 x49 x16
+t2 x2 x16
+t2 x53 x16
+t2 x28 x16
+t2 x55 x16
+t2 x48 x16
+t2 x52 x16
+t2 x8 x16
+t2 x17 x16
+t2 x6 x16
+t2 x49 x20
+t2 x2 x20
+t2 x44 x20
+t2 x33 x20
+t2 x31 x20
+t2 x7 x20
+t2 x48 x20
+t2 x35 x20
+t2 x23 x20
+t2 x0 x22
+t2 x2 x22
+t2 x36 x22
+t2 x23 x22
+t2 x26 x22
+t1 x27
+t2 x0 x27
+t2 x49 x27
+t2 x44 x27
+t2 x36 x27
+t2 x33 x27
+t2 x7 x27
+t2 x35 x27
+t2 x52 x27
+t2 x37 x27
+t2 x8 x27
+t2 x18 x27
+t2 x6 x27
+t2 x0 x30
+t2 x2 x30
+t2 x44 x30
+t2 x36 x30
+t2 x7 x30
+t2 x26 x30
+t2 x6 x30
+t2 x0 x34
+t2 x2 x34
+t2 x53 x34
+t2 x36 x34
+t2 x31 x34
+t2 x47 x34
+t2 x37 x34
+t2 x10 x34
+t2 x8 x34
+t2 x18 x34
+t2 x0 x38
+t2 x53 x38
+t2 x28 x38
+t2 x36 x38
+t2 x55 x38
+t2 x47 x38
+t2 x7 x38
+t2 x52 x38
+t2 x23 x38
+t1 x40
+t2 x17 x40
+t2 x6 x40
+t2 x26 x38
+t2 x32 x38
+t2 x40 x38
+t2 x2 x40
+t2 x53 x40
+t2 x28 x40
+t2 x47 x40
+t2 x48 x40
+t2 x10 x43
+t2 x8 x43
+t2 x37 x40
+t2 x18 x40
+t2 x43 x40
+t2 x0 x43
+t2 x2 x43
+t2 x44 x43
+t2 x36 x43
+t2 x31 x43
+t2 x35 x43
+t2 x26 x43
+t2 x17 x43
+t2 x6 x43
+t2 x0 x46
+t2 x28 x46
+t2 x36 x46
+t1 x51
+t2 x55 x51
+t2 x7 x51
+t2 x32 x51
+t2 x31 x46
+t2 x51 x46
+t2 x10 x46
+t2 x17 x46
+t2 x49 x51
+t2 x2 x51
+t2 x28 x51
+t2 x33 x51
+t2 x47 x51
+t2 x48 x54
+t2 x23 x54
+t2 x6 x54
+t2 x54 x51
+t2 x0 x54
+t2 x2 x54
+t2 x44 x54
+t2 x36 x54
+t2 x31 x54
+t2 x35 x54
+t2 x10 x54
+t2 x8 x54
+t1 x57
+t2 x44 x57
+t2 x55 x57
+t2 x48 x57
+t2 x52 x57
+t2 x23 x57
+t2 x8 x57
+t2 x32 x57
+t2 x18 x57
+t2 x0 x58
+t2 x44 x58
+t2 x53 x58
+t2 x36 x58
+t2 x31 x58
+t2 x52 x58
+t2 x37 x58
+t2 x10 x58
+t2 x26 x60
+t2 x17 x60
+t2 x6 x60
+t2 x32 x58
+t2 x60 x58
+t2 x0 x60
+t2 x2 x60
+t2 x44 x61
+t2 x36 x61
+t2 x31 x61
+t2 x18 x61
+t2 x61 x60
+t2 x0 x61
+t2 x2 x61
+t2 x53 x61
+t2 x28 x66
+t2 x23 x66
+t2 x6 x66
+t2 x52 x61
+t2 x66 x61
+t2 x26 x61
+t2 x32 x61
+t2 x0 x64
+t2 x36 x64
+t2 x7 x64
+t2 x49 x66
+t2 x2 x66
+t2 x33 x66
+t2 x7 x66
+t2 x48 x66
+t2 x35 x66
+t2 x10 x66
+t2 x8 x66
+t2 x44 x69
+t2 x53 x69
+t2 x28 x69
+t2 x48 x69
+t2 x52 x69
+t2 x37 x69
+t2 x26 x69
+t1 x73
+t2 x32 x73
+t2 x6 x73
+t2 x73 x69
+t2 x49 x73
+t2 x2 x73
+t2 x33 x73
+t2 x48 x73
+t2 x35 x73
+t2 x52 x73
+t2 x23 x73
+t2 x37 x73
+t2 x8 x73
+t2 x0 x76
+t2 x2 x76
+t2 x28 x76
+t1 x78
+t2 x36 x78
+t2 x7 x78
+t2 x26 x78
+t2 x6 x78
+t2 x78 x76
+t2 x23 x76
+t2 x10 x76
+t2 x0 x78
+t2 x2 x78
+t2 x44 x78
+t2 x31 x78
+t2 x8 x78
+t2 x32 x78
+t2 x18 x78
+t2 x0 x80
+t2 x49 x80
+t2 x28 x80
+t2 x36 x80
+t2 x33 x80
+t2 x35 x80
+t2 x10 x80
+t2 x6 x80
+t1 x81
+t2 x0 x81
+t2 x36 x81
+t2 x55 x81
+t2 x31 x81
+t2 x32 x81
+t2 x17 x81
+t2 x6 x81
+t2 x0 x84
+t2 x2 x84
+t2 x36 x84
+t2 x23 x84
+t2 x26 x84
+t2 x6 x84
+t2 x28 x86
+t2 x7 x86
+t2 x10 x86
+t2 x6 x86
+.end
