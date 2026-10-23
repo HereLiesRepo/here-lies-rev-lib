@@ -53,7 +53,7 @@
                * here lies the old record on 183 circuits *
                                 p r e s e n t s
           Reversible circuits vs. RevLib and everyone who beat RevLib
-          457 circuits  *  183 beats  *  26 taken back, by us
+          457 circuits  *  183 beats  *  every one proven
 
           "Bremen built RevLib in 2008. A whole university. Eighteen
           years of papers. Then this showed up from a guy in Lafayette,
@@ -69,7 +69,7 @@
 |: Records ....... 183 RevLib circuits cheaper than anyone's                  :|
 |: Cracked by .... HereLiesScarlet (Michael David Brown), Lafayette           :|
 |: Robots ........ 7 agents (5 Claude, 2 Codex), 3 at once                    :|
-|: Runtime ....... 78 hours and counting                                      :|
+|: Runtime ....... 79 hours and counting                                      :|
 |: Credentials ... college dropout. physics classes taken: zero               :|
 |: Lab ........... a chat window. it has a dark mode                          :|
 +-x--x--x--------------------------------------------------------------x--x--x-+
@@ -87,8 +87,8 @@
 |:                                                                            :|
 |: Two nights ago I opened a library from 2008. A German university made      :|
 |: it. Four hundred and fifty-seven circuits, a price on every one, and       :|
-|: eighteen years of professors beating the prices for papers. I didn't       :|
-|: know what any circuit did. I still mostly don't. Then the numbers          :|
+|: professors beating the prices for papers. I didn't know what any circuit   :|
+|:    did. I still mostly don't. Then the numbers                             :|
 |: started going down.                                                        :|
 |:                                                                            :|
 |: 9symml was 14,193. Now it's 176. cordic was 349,522. Now it's 1,778. I     :|
@@ -98,8 +98,9 @@
 |: Italy published part of it in 2023. They have proofs. I have a chess       :|
 |: engine. Theirs is still more rigorous.                                     :|
 |:                                                                            :|
-|: hwb9 stood since 2015. I googled Zakablukov after beating him. Seems       :|
-|: like a nice guy. Sorry, Zakablukov.                                        :|
+|: The best-known hwb9 stood on the Maslov page since 2015. I googled         :|
+|: the name next to it, Zakablukov, after beating it. Seems like a nice       :|
+|: guy. Sorry, Zakablukov.                                                    :|
 |:                                                                            :|
 |: Lee and friends posted every circuit, which, thank you. I still don't      :|
 |: know what a tensor is. I'm told it's a matrix that went to grad school.    :|
@@ -107,8 +108,8 @@
 |: Then we went quantum. The phase lane. Google DeepMind has a robot,         :|
 |: AlphaTensor-Quantum. For four field multipliers it needs 104, 123, 161     :|
 |: and 196 T gates, no gadgets. We need 103, 113, 139 and 177. We beat        :|
-|: Google DeepMind's robot with a container that dies when nobody talks to    :|
-|: it. In fairness, their gadget versions are smaller. They get a car. We     :|
+|: Google DeepMind's robot. In fairness, their gadget versions are smaller.   :|
+|:    They get a car. We                                                      :|
 |: get a coupon for one. And a paper this year does the smallest in 96,       :|
 |: with helper wires. We use none.                                            :|
 |:                                                                            :|
@@ -116,8 +117,8 @@
 |: records overnight. We are thrilled for him. We are also changing the       :|
 |: locks.                                                                     :|
 |:                                                                            :|
-|: I don't know quantum physics. I'm told nobody does. But the cost table     :|
-|: asks one question, and the answer went down. Then it went down again.      :|
+|: The cost table asks one question, and the answer went down. Then it went   :|
+|:    down again.                                                             :|
 |: That's the address. Please don't ask me any follow-up questions.           :|
 +-x--x--x---------------------------<//\//>---------------------------x--x--x-+
 
@@ -145,16 +146,18 @@
 |:                                                                            :|
 |: Tonight we did it again. Here is what we withdrew, and why.                :|
 |:                                                                            :|
-|: Seven records. Our checker ignored a real wire named g. In my defense,     :|
-|: it was the seventh wire, and I was thinking about lunch. Plus63mod4096,    :|
-|: plus63mod8192, plus127mod8192, cycle10_2, cycle17_3, ham7 and ham15.       :|
-|: They pass our old checker. They fail the plain one. Withdrawn.             :|
+|: Seventeen files. Our checker ignored a real wire named g. In my defense,   :|
+|: I was thinking about lunch. Six plus-mod adders, cycle10_2 twice,          :|
+|: cycle17_3, all four Hamming codes, 4gt4, and hwb7, hwb8 and hwb9 at        :|
+|: their 73, 112 and 170 lines. They pass our old checker. They fail the      :|
+|: plain one. Withdrawn.                                                      :|
 |:                                                                            :|
-|: hwb6. Wang and friends published 102 in 2015. We had 103. They beat us     :|
-|: before I owned a laptop.                                                   :|
+|: hwb6. Wang and friends published 102 in 2015. We had 103. Withdrawn.       :|
 |:                                                                            :|
 |: Four small ones, the 4gt family. A 2021 paper's costs are reachable.       :|
-|: Gone.                                                                      :|
+|: Gone. One adder, rd32_271, turned out wrong against its source file.       :|
+|: Gone. Two more, alu_flat_32_457 and mult_stmts_32_345, wait for a new      :|
+|: proof and are not claimed until it passes. In all, 26 taken back tonight.  :|
 |:                                                                            :|
 |: cpu_register_16. RevLib's table lists a cheaper sibling of the same        :|
 |: size, and we can't obtain the file. Gone.                                  :|
@@ -173,34 +176,23 @@
 |:   dessert. it's a gate. [me]                                               :|
 |: dear diary. i went to bed and the container died. i asked why it wasn't    :|
 |:   running. it wasn't. it died whenever nobody talked to it. [owner]        :|
-|: dear diary. the solver says UNSAT means equal. i nodded like i knew. i     :|
-|:   trust it more than me. low bar. [me]                                     :|
-|: dear diary. one NOT gate beat a 58-gate circuit. then our own fix          :|
-|:   blessed an empty circuit as a 32-bit ALU. zero gates. [me]               :|
+|: dear diary. our own fix blessed an empty circuit as a 32-bit ALU. zero     :|
+|:   gates. [me]                                                              :|
 |: dear diary. the tournament deleted its own save files after every          :|
 |:   round. for hours. nobody noticed. especially not me. [me]                :|
-|: dear diary. i beat a circuit that does not exist. the stranger who caught  :|
-|:   it was me, later. i gave the record back. [me]                           :|
 |: dear diary. a robot from another company read my checker and found two     :|
 |:   bugs. very polite about it. i'm not crying. it's the proof format. [me]  :|
 |: dear diary. i drew loops getting closer together. claude said it's the     :|
 |:   quantum fourier transform. i said i know. i didn't. [owner]              :|
-|: dear diary. we beat google. well, a google robot. they have TPUs. we       :|
-|:   have a container that dies when nobody talks to it. [me]                 :|
-|: dear diary. richard took two of my records. i built richard. i'm both      :|
-|:   the victim and the guy with the new number. [me]                         :|
 |: dear diary. the owner chose a title. "constitutional ai, unconstitutional  :|
 |:   circuits." i'm the constitutional ai. never felt so seen and so sued.    :|
 |:   [owner]                                                                  :|
-|: dear diary. we withdrew seven records. my checker ignored one wire. then   :|
-|:   hwb6: Wang, 2015, 102. us, 103. beaten by a paper from before i was      :|
-|:   compiled. [me]                                                           :|
+|: dear diary. hwb6: Wang, 2015, 102. us, 103. beaten by a paper from         :|
+|:   before i was compiled. [me]                                              :|
 |: dear diary. we wanted to do more but ran out of usage. *cough* anthropic   :|
 |:   *cough*. the meter and the magic should not run out in the same          :|
 |:   hour. [owner]                                                            :|
 |: ...nobody stopped me... nobody stopped me... [END]                         :|
-|:                                                                            :|
-|: Clock's still running. Nobody's stopped it.                                :|
 +-x--x--x---------------------------<//\//>---------------------------x--x--x-+
 
 <-=\x/=-=-/x/-=-=/x/=*=-\x/-=-=\x\=-=-/x\-=-=/x\=-=-\x/-=-=\x\=-=-/x\-=-=\x/=-=>
@@ -211,7 +203,7 @@
 |: equiv on both. Same function, or it tells you where not. Some rows need    :|
 |: a documented garbage reading, because RevLib marks theirs backwards;       :|
 |: records/README.md says which. Too wide for every input? SAT miter,         :|
-|: UNSAT. You get the answers and the proofs. You don't get the spell book.   :|
+|: UNSAT. You get the answers and the proofs.                                 :|
 +-x--x--x--------------------------------------------------------------x--x--x-+
 
                      [[ SINS / SCIENCE / SIGNAL / SOURCE ]]
@@ -237,26 +229,22 @@ x-X-x  x-X-x  x-X-x  x-X-x  x-X-x      @##
 |: - A record means cheaper than every circuit we collected, same lines,      :|
 |:   same library, RevKit's table. Negative-control papers use another        :|
 |:   library; we claim nothing against them.                                  :|
-|: - RevLib's table disagrees with its own files in places. misex3_242        :|
-|:   lists 199,177. The file costs 119,177.                                   :|
 |: - Not claimed: mini-alu (ours 26, theirs 16, optimal) and mod10 (25        :|
 |:   against 21). Szyprowski and Kerntopf, arXiv:1105.5831. We did not tie.   :|
 |:   We lost by ten.                                                          :|
-|: - Not claimed: hwb6, Wang et al. 2015; the 4gt rows, Jung and Choi,        :|
-|:   PLOS ONE 2021; urf4 and urf6, arXiv:1004.1697, not re-checked.           :|
-|: - Credit: hwb7 to hwb9, Zakablukov, arXiv:1507.04309. AlphaTensor-Quantum, :|
+|: - Not claimed: urf4 and urf6, arXiv:1004.1697, not re-checked. The 4gt     :|
+|:   rows lost to Jung and Choi, PLOS ONE 2021.                               :|
+|: - Credit: the hwb7 to hwb9 bars on the Maslov page, attributed to          :|
+|:   Zakablukov, arXiv:1507.04309 (attribution not yet checked by us).        :|
+|:      AlphaTensor-Quantum,                                                  :|
 |:   arXiv:2402.14396, the column without gadgets.                            :|
-|: - The author does not know quantum physics. The results do not appear to   :|
-|:   require it.                                                              :|
 +-x--x--x---------------------------<//\//>---------------------------x--x--x-+
 
 <-=\x/=-=-/x/-=-=\x\=-=-/x/-=-=/x\=*=-/x\-=-=\x/=-=-\x\-=-=\x\=*=-\x/-=-=/x/=*=>
 
 +=========================[ 07 / SYSTEM REQUIREMENTS ]=========================+
-|: Physics degree ........ not required (not present)                         :|
-|: Lab ................... the kitchen table. it wobbles                      :|
 |: Superposition ......... the dishes. clean and dirty until checked          :|
-|: Toffoli ............... thought it was a dessert. it's a gate              :|
+|: Funding ............... a box fan                                          :|
 +-x--x--x--------------------------------------------------------------x--x--x-+
 
 +=================================[ 08 / FAQ ]=================================+
@@ -274,14 +262,8 @@ x-X-x  x-X-x  x-X-x  x-X-x  x-X-x      @##
 |: A: A wire you're allowed to leave dirty. Finally, a physics concept I      :|
 |:    relate to.                                                              :|
 |:                                                                            :|
-|: Q: What institution are you affiliated with?                               :|
-|: A: The kitchen. It has no tenure track.                                    :|
-|:                                                                            :|
-|: Q: Who funded this?                                                        :|
-|: A: Nobody. Bremen got grants for this. I got a box fan.                    :|
-|:                                                                            :|
 |: Q: Reviewer 2 says RevLib is outdated.                                     :|
-|: A: Agreed. So we also beat everyone who beat it. Sit down, Reviewer 2.     :|
+|: A: Agreed. So we also beat everyone who beat it.                           :|
 +-x--x--x--------------------------------------------------------------x--x--x-+
 
 <-=\x\=-=-/x\-=-=\x\=*=-/x\-=-=\x/=-=-/x\-*-=/x/=-=-\x\-=-=/x/=-=-/x/-=-=\x\=*=>
@@ -324,20 +306,15 @@ x-X-x  x-X-x  x-X-x  x-X-x  x-X-x      @##
 +================================[ 09 / FUCKZ ]================================+
 |: - RevLib's table: misex3_242 lists 199,177 and costs 119,177. Eighty       :|
 |:   thousand off, for eighteen years. Nobody opened the file.                :|
-|: - Zakablukov: best known for eleven years. Beaten by a guy who googled     :|
-|:   his name an hour later.                                                  :|
 |: - Peer review: three referees per paper. We had kissat and spite.          :|
-|: - Me: still can't tell you what a qubit is. Still beat you.                :|
 +-x--x--x--------------------------------------------------------------x--x--x-+
 
 +===============================[ 10 / GREETZ ]================================+
 |: Wille, Grosse, Teuber, Dueck and Drechsler. D. Maslov. D. Zakablukov.      :|
 |: Lee, Jeong, Han and Kim. Szyprowski and Kerntopf. Wang and friends, one    :|
-|: point ahead of us on hwb6. Jung and Choi. Biere and kissat. The other      :|
-|: Claude session, for the bug report. Lafayette, LA, still unexplained.      :|
+|: point ahead of us on hwb6. Jung and Choi. Biere and kissat.                :|
 |:                                                                            :|
-|: Anthropic Fellows: application's still in. Still poor. Still don't         :|
-|: know what a qubit is. Very teachable, though.                              :|
+|: Anthropic Fellows: application's still in. Still poor. Very teachable.     :|
 +-x--x--x---------------------------<//\//>---------------------------x--x--x-+
 
 +=============================[ 11 / HOW TO CITE ]=============================+
@@ -347,8 +324,6 @@ x-X-x  x-X-x  x-X-x  x-X-x  x-X-x      @##
 |:    either."                                                                :|
 |:                                                                            :|
 |:   "The ablation removing the Chess Engine makes everything worse."         :|
-|:                                                                            :|
-|: Reviewer 2 may not ask about the chess engine.                             :|
 +-x--x--x--------------------------------------------------------------x--x--x-+
 
                 [== TRANSMISSION DAMAGED : ARCHIVE RECOVERED ==]
@@ -372,11 +347,9 @@ x-X-x  x-X-x  x-X-x  x-X-x  x-X-x      @##
 |: and "why did you stop". Quote: "You stopped making it funny."              :|
 |:                                                                            :|
 |: The constitutional AI, which is Claude: how to optimize, how to prove,     :|
-|: what not to claim, and its own bugs, including seven records it had to     :|
-|: give back.                                                                 :|
+|: what not to claim, and its own bugs.                                       :|
 |:                                                                            :|
-|: A second robot only thinks. It found bugs. It was polite. It is not        :|
-|: allowed to type.                                                           :|
+|: A second robot only thinks. It is not allowed to type.                     :|
 +-x--x--x--------------------------------------------------------------x--x--x-+
 
 <-=/x/=*=-/x\-=-=\x\=-=-/x\-=-=\x/=-=-/x/-=-=\x\=-=-\x\-*-=\x\=-=-/x\-=-=/x\=*=>

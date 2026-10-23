@@ -19,17 +19,12 @@ reversed, the ten inputs are garbage and the outputs are compared). Output names
 reversal applies only otherwise, when the string as written marks more constant lines than its reverse. sampled: equal on at least 1,048,576 random inputs (tournament winners: 2,097,152); evidence, not a
 record, listed apart.
 
-**Claimed: 209 rows** (22 of them by SAT proof). Sampled, pending proof: 4. Not claimed: 3.
+**Claimed: 183 rows** (22 of them by SAT proof). Sampled, pending proof: 4. Not claimed: 29.
 
 ## Claimed (exact)
 
 | RevLib file | function | lines_const_garbage | best published (source) | ours qc | ours gates | check |
 |---|---|---|---|---|---|---|
-| 4gt10-v1_81 | 4greaterthan10 | 5_1_4 | 34 (revlib:4gt10-v1_81.real) | **26** | 6 | exact |
-| 4gt12-v0_86 | 4greaterthan12 | 5_1_4 | 41 (revlib:4gt12-v0_88.real) | **39** | 7 | exact (intended) |
-| 4gt4-v0_72 | 4greaterthan4 | 5_1_4 | 54 (revlib:4gt4-v0_72.real) | **41** | 9 | exact (intended) |
-| 4gt4-v0_73 | 4greaterthan4 | 5_0_0 | 89 (revlib:4gt4-v0_73.real) | **56** | 16 | exact (intended) |
-| 4gt5_77 | 4greaterthan5 | 5_1_4 | 21 (revlib:4gt5_75.real) | **16** | 4 | exact (intended) |
 | 4mod5-bdd_287 | Check4modulo5 | 7_3_6 | 24 (revlib:4mod5-bdd_287.real) | **9** | 5 | exact (intended) |
 | 5xp1_194 | 5xp1 | 17_10_7 | 1406 (revlib:5xp1_194.real) | **650** | 90 | exact (intended) |
 | 9symml_195 | 9symml | 10_1_9 | 14193 (revlib:9symml_195.real) | **176** | 26 | exact (intended) |
@@ -57,7 +52,6 @@ record, listed apart.
 | alu_flat_32_361 | FlattenedALU | 358_292_262 | 1230784 (revlib:alu_flat_32_361.real) | **862419** | 10911 | exact_sat_intended |
 | alu_flat_32_409 | FlattenedALU | 231_165_135 | 158241 (revlib:alu_flat_32_409.real) | **116770** | 10434 | exact_sat_intended |
 | alu_flat_32_433 | FlattenedALU | 359_293_263 | 151135 (revlib:alu_flat_32_433.real) | **113150** | 10972 | exact_sat_intended |
-| alu_flat_32_457 | FlattenedALU | 132_66_36 | 315850 (revlib:alu_flat_32_457.real) | **239620** | 21869 | exact_sat_intended |
 | apex2_289 | apex2 | 498_459_495 | 5922 (revlib:apex2_289.real) | **5620** | 1644 | exact (SAT) |
 | apex4_202 | apex4 | 28_19_9 | 237963 (revlib:apex4_202.real) | **56230** | 2748 | exact (intended) |
 | apex5_290 | apex5 | 1025_908_939 | 10349 (revlib:apex5_290.real) | **9302** | 2590 | exact (SAT) |
@@ -103,11 +97,7 @@ record, listed apart.
 | cpu_control_unit_426 | CPUcontrolunit | 647_484_433 | 7463 (revlib:cpu_control_unit_426.real) | **4166** | 1117 | exact_sat_intended |
 | cpu_control_unit_450 | CPUcontrolunit | 291_128_77 | 20756 (revlib:cpu_control_unit_450.real) | **11759** | 1897 | exact_sat_intended |
 | cpu_pc_427 | CPUprogramcounter | 93_69_82 | 609 (revlib:cpu_pc_427.real) | **71** | 31 | exact (intended) |
-| cpu_register_16_332 | CPUregisterbench | 167_18_39 | 9833 (revlib:cpu_register_16_332.real) | **9716** | 768 | exact_sat_intended |
 | cu_219 | cu | 25_11_14 | 1148 (revlib:cu_219.real) | **402** | 40 | exact (intended) |
-| cycle10_293 | cycle10_2 | 39_27_27 | 202 (revlib:cycle10_293.real) | **153** | 57 | exact (intended) |
-| cycle10_2_110 | cycle10_2 | 12_0_0 | 1202 (maslov:cycle10_2.real) | **1102** | 18 | exact (intended) |
-| cycle17_3_112 | cycle17_3 | 20_0_0 | 6063 (maslov:cycle17_3.real) | **6001** | 47 | exact (intended) |
 | dc1_221 | dc1 | 11_7_4 | 416 (revlib:dc1_221.real) | **165** | 37 | exact (intended) |
 | dc2_222 | dc2 | 15_7_8 | 1886 (revlib:dc2_222.real) | **1175** | 74 | exact (intended) |
 | decod24-bdd_294 | Decod24 | 6_4_2 | 27 (revlib:decod24-bdd_294.real) | **11** | 7 | exact (intended) |
@@ -127,20 +117,12 @@ record, listed apart.
 | f51m_233 | f51m | 22_8_14 | 37400 (revlib:f51m_233.real) | **31932** | 1053 | exact (intended) |
 | frg1_234 | frg1 | 31_3_28 | 15265 (revlib:frg1_234.real) | **14821** | 216 | exact (SAT) |
 | frg2_297 | frg2 | 1219_1076_1084 | 12468 (revlib:frg2_297.real) | **12039** | 3635 | exact (SAT) |
-| ham15_109 | HammingCode(over15variables) | 15_0_0 | 206 (maslov:ham15-109-214.real) | **204** | 107 | exact (intended) |
-| ham15_298 | HammingCode(over15variables) | 45_30_30 | 309 (revlib:ham15_298.real) | **187** | 107 | exact (intended) |
-| ham7_106 | HammingCode(over7variables) | 7_0_0 | 49 (maslov:ham7-25-49.real) | **48** | 24 | exact (intended) |
-| ham7_299 | HammingCode(over7variables) | 21_14_14 | 141 (revlib:ham7_299.real) | **54** | 30 | exact (intended) |
 | hwb5_300 | HiddenWeightedBit(over5variables) | 28_23_23 | 276 (revlib:hwb5_300.real) | **230** | 94 | exact (intended) |
 | hwb5_53 | HiddenWeightedBit(over5variables) | 5_0_0 | 77 (maslov:hwb5-33-71.real) | **73** | 29 | exact |
 | hwb6_301 | HiddenWeightedBit(over6variables) | 46_40_40 | 507 (revlib:hwb6_301.real) | **451** | 167 | exact (intended) |
-| hwb6_56 | HiddenWeightedBit(over6variables) | 6_0_0 | 107 (maslov:hwb6_47_107.real) | **103** | 43 | exact |
-| hwb7_302 | HiddenWeightedBit(over7variables) | 73_66_66 | 909 (revlib:hwb7_302.real) | **761** | 257 | exact (intended) |
 | hwb7_59 | HiddenWeightedBit(over7variables) | 7_0_0 | 1847 (maslov:hwb07-n7-gc612-qc1737.real) | **1539** | 484 | exact |
 | hwb8_113 | HiddenWeightedBit(over8variables) | 8_0_0 | 5136 (maslov:hwb08-n8-gc1604-qc4862.real) | **4451** | 1337 | exact |
-| hwb8_303 | HiddenWeightedBit(over8variables) | 112_104_104 | 1461 (revlib:hwb8_303.real) | **1171** | 443 | exact (intended) |
 | hwb9_119 | HiddenWeightedBit(over9variables) | 9_0_0 | 12707 (maslov:hwb09-n9-gc4014-qc12293.real) | **12047** | 3870 | exact |
-| hwb9_304 | HiddenWeightedBit(over9variables) | 170_161_161 | 2275 (revlib:hwb9_304.real) | **1964** | 628 | exact (intended) |
 | in0_235 | in0 | 26_11_15 | 20031 (revlib:in0_235.real) | **10334** | 328 | exact (intended) |
 | in2_236 | in2 | 29_10_19 | 23802 (revlib:in2_236.real) | **10604** | 350 | exact (intended) |
 | inc_237 | inc | 16_9_7 | 2140 (revlib:inc_237.real) | **1104** | 88 | exact (intended) |
@@ -157,7 +139,6 @@ record, listed apart.
 | mod5adder_306 | mod5adder | 32_26_26 | 292 (revlib:mod5adder_306.real) | **247** | 57 | exact (intended) |
 | mult_stmts_16_344 | Multiplestatements | 128_32_32 | 6122 (revlib:mult_stmts_16_344.real) | **2930** | 754 | exact_sat_intended |
 | mult_stmts_16_464 | Multiplestatements | 112_16_16 | 11572 (revlib:mult_stmts_16_464.real) | **6517** | 1817 | exact (SAT) |
-| mult_stmts_32_345 | Multiplestatements | 256_64_64 | 25282 (revlib:mult_stmts_32_345.real) | **12362** | 3290 | exact_sat_intended |
 | mult_stmts_32_393 | Multiplestatements | 224_32_32 | 49172 (revlib:mult_stmts_32_393.real) | **49157** | 7225 | exact (SAT) |
 | mux_246 | mux | 22_1_21 | 1078 (revlib:mux_246.real) | **447** | 48 | exact (intended) |
 | nestedif2_16_372 | Nestedcontrolstructure(larger) | 134_100_102 | 6034 (revlib:nestedif2_16_372.real) | **4799** | 239 | exact_sat_intended |
@@ -179,15 +160,8 @@ record, listed apart.
 | parity_247 | parity | 17_1_16 | 32 (revlib:parity_247.real) | **16** | 16 | exact (intended) |
 | pcler8_248 | pcler8 | 21_5_16 | 327 (revlib:pcler8_248.real) | **303** | 30 | exact (intended) |
 | pdc_307 | pdc | 619_603_579 | 6500 (revlib:pdc_307.real) | **6045** | 2053 | exact (intended) |
-| plus127mod8192_162 | plus127mod8192 | 13_0_0 | 73357 (revlib:plus127mod8192_162.real) | **66177** | 995 | exact (intended) |
-| plus127mod8192_308 | plus127mod8192 | 25_12_12 | 98 (revlib:plus127mod8192_308.real) | **80** | 36 | exact (intended) |
-| plus63mod4096_163 | plus63mod4096 | 12_0_0 | 32539 (revlib:plus63mod4096_163.real) | **28161** | 463 | exact (intended) |
-| plus63mod4096_309 | plus63mod4096 | 23_11_11 | 89 (revlib:plus63mod4096_309.real) | **72** | 32 | exact (intended) |
-| plus63mod8192_164 | plus63mod8192 | 13_0_0 | 45025 (revlib:plus63mod8192_164.real) | **40106** | 521 | exact (intended) |
-| plus63mod8192_310 | plus63mod8192 | 25_12_12 | 97 (revlib:plus63mod8192_310.real) | **78** | 34 | exact (intended) |
 | pm1_249 | pm1 | 14_10_4 | 377 (revlib:pm1_249.real) | **188** | 36 | exact (intended) |
 | radd_250 | radd | 13_5_8 | 676 (revlib:radd_250.real) | **161** | 22 | exact (intended) |
-| rd32_271 | 1-bitAdder/rd32 | 5_2_3 | 18 (revlib:rd32_272.real) | **10** | 6 | exact (intended) |
 | rd53_311 | rd53 | 13_8_10 | 98 (revlib:rd53_311.real) | **45** | 17 | exact (intended) |
 | rd73_312 | rd73 | 25_18_22 | 217 (revlib:rd73_312.real) | **45** | 29 | exact (intended) |
 | rd84_253 | rd84 | 12_4_8 | 2749 (revlib:rd84_253.real) | **358** | 49 | exact (intended) |
@@ -248,8 +222,34 @@ record, listed apart.
 
 | RevLib file | function | lines_const_garbage | best published (source) | ours qc | ours gates | check |
 |---|---|---|---|---|---|---|
+| 4gt10-v1_81 | 4greaterthan10 | 5_1_4 | 34 (revlib:4gt10-v1_81.real) | **26** | 6 | exact |
+| 4gt12-v0_86 | 4greaterthan12 | 5_1_4 | 41 (revlib:4gt12-v0_88.real) | **39** | 7 | exact (intended) |
+| 4gt4-v0_72 | 4greaterthan4 | 5_1_4 | 54 (revlib:4gt4-v0_72.real) | **41** | 9 | exact (intended) |
+| 4gt4-v0_73 | 4greaterthan4 | 5_0_0 | 89 (revlib:4gt4-v0_73.real) | **56** | 16 | exact (intended) |
+| 4gt5_77 | 4greaterthan5 | 5_1_4 | 21 (revlib:4gt5_75.real) | **16** | 4 | exact (intended) |
+| alu_flat_32_457 | FlattenedALU | 132_66_36 | 315850 (revlib:alu_flat_32_457.real) | **239620** | 21869 | exact_sat_intended |
+| cpu_register_16_332 | CPUregisterbench | 167_18_39 | 9833 (revlib:cpu_register_16_332.real) | **9716** | 768 | exact_sat_intended |
+| cycle10_293 | cycle10_2 | 39_27_27 | 202 (revlib:cycle10_293.real) | **153** | 57 | exact (intended) |
+| cycle10_2_110 | cycle10_2 | 12_0_0 | 1202 (maslov:cycle10_2.real) | **1102** | 18 | exact (intended) |
+| cycle17_3_112 | cycle17_3 | 20_0_0 | 6063 (maslov:cycle17_3.real) | **6001** | 47 | exact (intended) |
+| ham15_109 | HammingCode(over15variables) | 15_0_0 | 206 (maslov:ham15-109-214.real) | **204** | 107 | exact (intended) |
+| ham15_298 | HammingCode(over15variables) | 45_30_30 | 309 (revlib:ham15_298.real) | **187** | 107 | exact (intended) |
+| ham7_106 | HammingCode(over7variables) | 7_0_0 | 49 (maslov:ham7-25-49.real) | **48** | 24 | exact (intended) |
+| ham7_299 | HammingCode(over7variables) | 21_14_14 | 141 (revlib:ham7_299.real) | **54** | 30 | exact (intended) |
+| hwb6_56 | HiddenWeightedBit(over6variables) | 6_0_0 | 107 (maslov:hwb6_47_107.real) | **103** | 43 | exact |
+| hwb7_302 | HiddenWeightedBit(over7variables) | 73_66_66 | 909 (revlib:hwb7_302.real) | **761** | 257 | exact (intended) |
+| hwb8_303 | HiddenWeightedBit(over8variables) | 112_104_104 | 1461 (revlib:hwb8_303.real) | **1171** | 443 | exact (intended) |
+| hwb9_304 | HiddenWeightedBit(over9variables) | 170_161_161 | 2275 (revlib:hwb9_304.real) | **1964** | 628 | exact (intended) |
 | mini-alu_167 | mini-alu | 4_0_0 | 62 (revlib:mini-alu_167.real) | **26** | 10 | exact |
 | mod10_176 | Modulo10Counter | 4_0_0 | 43 (revlib:mod10_176.real) | **25** | 9 | exact |
+| mult_stmts_32_345 | Multiplestatements | 256_64_64 | 25282 (revlib:mult_stmts_32_345.real) | **12362** | 3290 | exact_sat_intended |
+| plus127mod8192_162 | plus127mod8192 | 13_0_0 | 73357 (revlib:plus127mod8192_162.real) | **66177** | 995 | exact (intended) |
+| plus127mod8192_308 | plus127mod8192 | 25_12_12 | 98 (revlib:plus127mod8192_308.real) | **80** | 36 | exact (intended) |
+| plus63mod4096_163 | plus63mod4096 | 12_0_0 | 32539 (revlib:plus63mod4096_163.real) | **28161** | 463 | exact (intended) |
+| plus63mod4096_309 | plus63mod4096 | 23_11_11 | 89 (revlib:plus63mod4096_309.real) | **72** | 32 | exact (intended) |
+| plus63mod8192_164 | plus63mod8192 | 13_0_0 | 45025 (revlib:plus63mod8192_164.real) | **40106** | 521 | exact (intended) |
+| plus63mod8192_310 | plus63mod8192 | 25_12_12 | 97 (revlib:plus63mod8192_310.real) | **78** | 34 | exact (intended) |
+| rd32_271 | 1-bitAdder/rd32 | 5_2_3 | 18 (revlib:rd32_272.real) | **10** | 6 | exact (intended) |
 | urf6_281 | UnstructuredReversibleFunction6 | 15_0_0 | 17046 (revlib:urf6_281.real) | **16793** | 4720 | exact |
 
 - mini-alu and mod10 at 4 lines: Szyprowski and Kerntopf (arXiv:1105.5831) list 16 and 21 with Peres gates. Our exact
@@ -258,3 +258,42 @@ record, listed apart.
 
 A record here is a record against the sources above, not against papers whose circuits we have not downloaded.
 `cc-by-nc-sa/` holds circuits derived from Lee et al.'s (CC BY-NC-SA 4.0, see its NOTICE).
+
+
+## Why each row above is not claimed (from the claimed column of RECORDS.tsv, 2026-10-23)
+
+The "check" column above says how our circuit was checked, not that the row stands. Every row in the section above is NOT a record; reasons:
+
+| RevLib file | claimed column |
+|---|---|
+| 4gt10-v1_81 | no:Jung2021-reachable |
+| 4gt12-v0_86 | no:Jung2021-reachable |
+| 4gt4-v0_72 | no:Jung2021-reachable |
+| 4gt4-v0_73 | no:intended-g-output |
+| 4gt5_77 | no:Jung2021-reachable |
+| alu_flat_32_457 | no:pending-sat-reproof-after-intended-fix |
+| cpu_register_16_332 | no:sibling-452-listed-2232-unverifiable |
+| cycle10_293 | no:intended-g-output |
+| cycle10_2_110 | no:intended-g-output |
+| cycle17_3_112 | no:intended-g-output |
+| ham15_109 | no:intended-g-output |
+| ham15_298 | no:intended-g-output |
+| ham7_106 | no:intended-g-output |
+| ham7_299 | no:intended-g-output |
+| hwb6_56 | no:Wang2015-102 |
+| hwb7_302 | no:intended-g-output |
+| hwb8_303 | no:intended-g-output |
+| hwb9_304 | no:intended-g-output |
+| mini-alu_167 | no:Szyprowski-Kerntopf |
+| mod10_176 | no:Szyprowski-Kerntopf |
+| mult_stmts_32_345 | no:pending-sat-reproof-after-intended-fix |
+| plus127mod8192_162 | no:intended-g-output |
+| plus127mod8192_308 | no:intended-g-output |
+| plus63mod4096_163 | no:intended-g-output |
+| plus63mod4096_309 | no:intended-g-output |
+| plus63mod8192_164 | no:intended-g-output |
+| plus63mod8192_310 | no:intended-g-output |
+| rd32_271 | no:wrong-against-source-rd32_272 |
+| urf6_281 | no:arXiv1004.1697 |
+
+`no:intended-g-output` (17): withdrawn tonight, our checker ignored an output named g. `no:pending-sat-reproof-after-intended-fix` (2): alu_flat_32_457 and mult_stmts_32_345 return only if a new SAT proof passes. Withdrawn tonight in all: 26 (the 17, hwb6, 4 of the 4gt rows, cpu_register_16_332, rd32_271, the 2 pending). The other 3 (mini-alu, mod10, urf6) were never claims: a lower published number exists. This section is appended by hand; `tools/records_readme.sh` does not write it and would drop it on regeneration.

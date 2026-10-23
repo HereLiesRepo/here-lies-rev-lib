@@ -10,7 +10,7 @@ RevLib is the reversible-circuit benchmark everyone cites. Its price list dates 
 
 - **183 of RevLib's 456 entries** now have a circuit cheaper than the best one published anywhere we could find.
 - Total quantum cost fell from **14,391,810 to 7,891,148 (-45.2%)**.
-- **71 circuits** were cut by more than half. cordic went from 349,522 to 1,778.
+- **71 circuits** were cut by at least half (70 by more than half). cordic went from 349,522 to 1,778.
 - On Clifford+T GF(2^n) multipliers with no ancillas, no measurements and no gadgets, we beat Google DeepMind's AlphaTensor-Quantum for n = 7 to 10: **103 / 113 / 139 / 177 T against 104 / 123 / 161 / 196**.
 - Every claim is checked against the file RevLib serves, exhaustively or by SAT with a DRAT proof that drat-trim accepts.
 - We also withdrew 27 of our own claims, which is the part of this paper we are proudest of (Section 6).
@@ -24,7 +24,7 @@ The crew was 7 agents (5 Claude, 2 Codex, at most 3 Claude sessions in any two-h
 | when | what happened |
 |---|---|
 | 20 Oct, hours 0-8 | owner asleep, machine asleep, nobody in charge; RevLib's price list audited (it has typos); garbage outputs turn out to be sometimes listed backwards; four small circuits proven optimal; container restarts wipe everything, twice |
-| 20 Oct, hours 9-14 | first records; Zakablukov's hwb7-9, best since 2015, apparently beaten (we took that back, Section 6); 49, then 106 records |
+| 20 Oct, hours 9-14 | first records; hwb7-9 beaten (the garbage-line versions were taken back, Section 6; the 0-garbage ones stand); 49, then 106 records |
 | 20 Oct, hours 14-17 | an agent finds a bug in another agent's work, fixed in six minutes; owner's parity structure applied (sym9 2,077 to 199 at the time); 183 records |
 | 20 Oct, hour 18 | every SAT proof now run twice by two independently written encoders |
 | 22-23 Oct | the adversarial audit; 27 claims withdrawn |
@@ -172,7 +172,7 @@ Nobody caught these for us. We found every one by auditing our own claims agains
 | **arb8_322.** Our reference was a 39-line file RevLib does not serve; RevLib's has 60 lines and ours differed on 219 of 256 inputs. | withdrawn 2026-10-22. |
 | **Proofs older than the verifier fix.** | alu_flat_32_457, mult_stmts_32_345 withdrawn pending re-proof. |
 
-That is 17 + 4 + 1 + 1 + 1 + 2 = 26 files withdrawn on 2026-10-23, plus arb8_322 the day before: 27. hwb7 to hwb9 are among the 17; we make no claim to beat Zakablukov. Three more rows (mini-alu, mod10, urf6) are unclaimed because a lower published number exists (Section 7).
+That is 17 + 4 + 1 + 1 + 1 + 2 = 26 files withdrawn on 2026-10-23, plus arb8_322 the day before: 27. The garbage-line hwb7 to hwb9 are among the 17. The 0-garbage hwb7, hwb8 and hwb9 stand against the Maslov-page bars; whether they also beat Zakablukov's circuits is unchecked, so we do not claim it. Three more rows (mini-alu, mod10, urf6) are unclaimed because a lower published number exists (Section 7).
 
 ## 7. Published numbers lower than ours
 

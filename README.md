@@ -2,11 +2,11 @@
 
 Every circuit in [RevLib](https://www.revlib.org) (Bremen), re-optimized under its own rules: same lines, same gate
 library (MCT, NCT, MCT+P, MCF, MCT+MCF, NCV), same quantum-cost table (RevKit). A circuit counts as beaten only when
-our rewrite **dominates** it: gates ≤ and quantum cost ≤, one strictly. Work in progress; the release NFO comes later.
+our rewrite **dominates** it: gates ≤ and quantum cost ≤, one strictly.
 
 **[RELEASE.nfo](RELEASE.nfo)**: the release notes, the State of the RevLib Address and the hour-by-hour clock (what the owner asked, what ran on its own).
 
-## Tally (`results/score.sh`, 2026-10-20)
+## Tally (`results/score.sh`, 2026-10-20; a snapshot from before tonight's 26 withdrawals, which it still counts)
 
 | | circuits | beaten | exact | sampled |
 |---|---|---|---|---|
@@ -17,7 +17,7 @@ our rewrite **dominates** it: gates ≤ and quantum cost ≤, one strictly. Work
 - **sampled**: equal on 1,048,576 random assignments. Evidence, not proof; listed apart and never mixed in.
 - Six circuit files have no row in RevLib's table, so no library and no record: excluded.
 
-## Below the best published circuit: 209 records (records/)
+## Below the best published circuit: 183 records (records/)
 
 Against every published circuit we collected (RevLib, the reversiblebenchmarks.github.io best-known collection, and
 Lee et al. 2021), in RevLib's own cost table and RevLib's own gate library for that file, proven on every input. Full
@@ -35,18 +35,18 @@ list and caveats: [records/README.md](records/README.md), generated from records
 | add6 | 19 | 6,455 (RevLib) | **499** | rebuilt |
 | rd84 | 12 | 2,749 (RevLib) | **358** | rebuilt |
 | clip | 14 | 6,731 (RevLib) | **899** | rebuilt |
-| apex4 | 28 | 237,963 (RevLib) | **57,371** | rebuilt |
-| hwb7 | 7 | 1,847 (Zakablukov 2015) | **1,539** | optimized |
-| hwb8 | 8 | 5,136 (Zakablukov 2015) | **4,451** | optimized |
+| apex4 | 28 | 237,963 (RevLib) | **56,230** | rebuilt |
+| hwb7 | 7 | 1,847 (Maslov collection) | **1,539** | optimized |
+| hwb8 | 8 | 5,136 (Maslov collection) | **4,451** | optimized |
 | urf1 | 9 | 11,646 (Lee et al. 2021) | **10,979** | optimized |
 | urf2 | 8 | 4,538 (Lee et al. 2021) | **4,189** | optimized |
-| urf3 | 10 | 30,065 (Lee et al. 2021) | **28,679** | optimized |
+| urf3 | 10 | 30,065 (Lee et al. 2021) | **28,671** | optimized |
 
 Every circuit here came out of **Witchcraft(TM)**, our own optimizer and compiler toolchain, built in-house with no
 outside libraries. Witchcraft is not in this repository and its recipe is not described here. What this repository does
 publish is everything you need to check us: every circuit, every proof, and a verifier small enough to read in one
 sitting. "Rebuilt" means Witchcraft generated the circuit from the function's truth table; "optimized" means it
-started from the published circuit. Runs continue; numbers only go down.
+started from the published circuit. Runs continue; numbers only go down, except the 26 we took back (see records/README.md).
 
 Prior work we build on, credited (the papers are theirs; the selection, the engineering and the records are ours):
 Bernasconi, Berti, Ciriani, Del Corso & Fulginiti, IEEE TCAD 42(6), 2023 (doi:10.1109/TCAD.2022.3213214); Keren, Levin &
@@ -85,14 +85,14 @@ All named by the owner. All of them live in Witchcraft(TM). How they work is our
   AlphaTensor-Quantum's no-gadget 104, 123, 161 and 196, built from AlphaTensor-Quantum's own small-field decompositions (credit theirs), proven
   EQUAL ([phase/records/](phase/records/RECORDS.tsv)). Richard still has 0; a different spell did these.
 
-All 22 are named by the owner.
+All 22 are named by the owner (the full list is in the paper).
 
 ## What this is NOT (read before quoting it)
 
 RevLib's table is from around 2010–2012. Later papers beat many of its entries, so **beating RevLib's table is not a
 world record**. Checked so far: mini_alu qc 16 and the 4-bit exact quantum-cost minima (Szyprowski & Kerntopf,
 arXiv:1105.5831), urf1 16,619 and urf2 6,600 (arXiv:1004.1697). Ours: mini_alu 26, urf1 16,658, urf2 6,963. Those
-RevLib-start numbers are not records; starting from Lee et al.'s circuits instead, urf1/2/5 are (see above).
+RevLib-start numbers are not records; starting from Lee et al.'s circuits instead, urf1/2/3/5 are (see above).
 
 ## Proven optimal (complete exact search, `proofs/mitm_receipts.txt`)
 
@@ -107,6 +107,10 @@ cheaper circuit can lie outside the range the search fully covered.
 
 ## RevLib best-per-function realizations we beat exactly
 
+Snapshot of `results/score.tsv` before tonight's withdrawals; the seven files withdrawn for the checker defect
+(hwb7_302, hwb8_303, hwb9_304, cycle10_293, plus63mod4096_309, plus63mod8192_310, plus127mod8192_308) are removed.
+Some rows here beat RevLib's own circuit but are not records (4gt10, mod10, urf6, mini_alu); records/README.md is the record list.
+
 | circuit | library | function | gates | quantum cost |
 |---|---|---|---|---|
 | 0410184_169.real | NCT | 0410184 | 46 → **45** | 90 → **89** |
@@ -118,22 +122,15 @@ cheaper circuit can lie outside the range the search fully covered.
 | arb8_323.real | MCT+MCF | Arbiter(with8clients) | 24 → **22** | 746 → **537** |
 | bw_291.real | MCT | bw | 307 → **305** | 943 → **933** |
 | cnt3-5_179.real | MCT | TernaryCounter | 25 → **20** | 65 → **60** |
-| cycle10_293.real | MCT | cycle10_2 | 78 → **68** | 202 → **184** |
 | dc2_222.real | MCT | dc2 | 75 → **74** | 1886 → **1881** |
 | decod24-enable_125.real | MCT | Decod24withenable | 9 → **8** | 21 → **20** |
 | ex5p_296.real | MCT | ex5p | 647 → **640** | 1843 → **1824** |
 | example2_231.real | MCT | example2 | 157 → **156** | 5654 → **5649** |
-| hwb7_302.real | MCT | HiddenWeightedBit(over7variables) | 281 → **279** | 909 → **907** |
-| hwb8_303.real | MCT | HiddenWeightedBit(over8variables) | 449 → **448** | 1461 → **1460** |
-| hwb9_304.real | MCT | HiddenWeightedBit(over9variables) | 699 → **695** | 2275 → **2267** |
 | in0_235.real | MCT | in0 | 338 → **334** | 20031 → **20027** |
 | miller_11.real | MCT | Millergate | 5 → **5** | 17 → **9** |
 | mini_alu_305.real | MCT | mini-alu | 20 → **19** | 60 → **59** |
 | mod10_176.real | MCT | Modulo10Counter | 7 → **7** | 43 → **35** |
 | pdc_307.real | MCT | pdc | 2080 → **2045** | 6500 → **6413** |
-| plus127mod8192_308.real | MCT | plus127mod8192 | 54 → **37** | 98 → **81** |
-| plus63mod4096_309.real | MCT | plus63mod4096 | 49 → **33** | 89 → **73** |
-| plus63mod8192_310.real | MCT | plus63mod8192 | 53 → **35** | 97 → **79** |
 | sf_275.real | MCT | SampleFunction | 11 → **8** | 51 → **44** |
 | spla_315.real | MCT | spla | 1709 → **1696** | 5925 → **5864** |
 | sqr6_259.real | MCT | sqr6 | 81 → **80** | 1033 → **1012** |
